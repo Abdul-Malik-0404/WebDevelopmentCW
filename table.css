@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#table-title {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-weight: bold;
+}
+
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #2e7d32;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #e0f2f1;
+    
+}
