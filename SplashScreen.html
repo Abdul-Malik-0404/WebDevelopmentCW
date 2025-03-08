@@ -40,7 +40,29 @@
             z-index: -1;
             transform: translateX(-50%) translateY(-50%);
             object-fit: cover;
-          }
+        }
+
+        #loading-bar {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        #loading-bar div {
+            height: 100%;
+            width: 0;
+            background-color: #ffffff;
+            animation: loading 4s linear forwards;
+        }
+
+        @keyframes loading {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -56,6 +78,24 @@
                 <li>Abheeth</li>
                 <li>Akithma</li>
             </ul>
+        <div id="loading-bar">
+            <div id="loading">
+                <span id="loading-text" style="position: absolute; left: 50%5; top: -30px; color: white; font-size: 16px;">0%</span>
+                <script>
+                    const loadingText = document.getElementById('loading-text');
+                    const loadingBar = document.getElementById('loading');
+                    let percentage = 0;
+
+                    const interval = setInterval(() => {
+                        percentage += 1;
+                        loadingText.textContent = `${percentage}%`;
+                        if (percentage >= 100) {
+                            clearInterval(interval);
+                        }
+                    }, 40);
+                </script>
+            </div>
+        </div>
     </div>
 </body>
 </html>
