@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <meta http-equiv="refresh" content="4;url=home.html">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="pageEditor_ST2.css">
+    <style>
+        ul {
+            padding-left: 50%; 
+            color:white;
+            font-size: 24px;
+            font-family: "Big Shoulders Stencil", cursive;
+        }
+        p {
+            color: #ffffff;
+            font-size: 24px;
+            font-family: "Big Shoulders Stencil", cursive;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 96px;
+            font-family: "Big Shoulders Stencil", cursive;
+        }
+        
+        #video-background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover;
+          }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay loop muted playsinline>
+        <source src="Videos/BackgroundVideo.mp4" type="video/mp4">
+    </video>
+    <div style="background-color: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+        <center><h1>Thriving Earth</h1></center>
+        <center><p>We aim to protect, restore, and promote the sustainable use of terrestrial ecosystems, combat desertification, halt and reverse land degradation, and halt biodiversity loss.</p></center>
+            <ul>
+                <li>Malik</li>
+                <li>Yasith </li>
+                <li>Abheeth</li>
+                <li>Akithma</li>
+            </ul>
+    </div>
+</body>
+</html>
