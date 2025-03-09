@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+h1 {
+    color: #2c3e50;
+}
+.volunteer-opportunity-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.volunteer-opportunity {
+    display: inline-block;
+    width: 45%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.volunteer-opportunity h2 {
+    color: #2c3e50;
+}
+.volunteer-opportunity p {
+    color: #34495e;
+}
+.volunteer-opportunity a {
+    color: inherit;
+    text-decoration: none;
+}
+.volunteer-opportunity :hover {
+    transform: scale(1.05);
+}
+h2 {
+    color: #34495e;
+}
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
